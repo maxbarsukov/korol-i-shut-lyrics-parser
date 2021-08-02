@@ -24,7 +24,9 @@ build/
 build-iPhoneOS/
 build-iPhoneSimulator/
 
-# vendor/Pods/
+## IDE files
+.idea
+.vscode
 
 ## Documentation cache and generated files:
 /.yardoc/
