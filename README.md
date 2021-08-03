@@ -30,7 +30,7 @@ Install gems:
 Run `ruby src/main.rb -h` to view the help.
 ```
 Usage:
-   ruby src/main.rb [-h] [-b/-a] [-o output_file] [-o output_folder] [-w true/false] [-s separator] [-d]
+   ruby src/main.rb [-h] [-b/-a] [-o output_file] [-o output_folder] [-w] [-s separator] [-d]
    -h, --help           Show this help.
    -b, --by_song        Records one song lyrics per file.
                         [Enable by default]
@@ -40,7 +40,7 @@ Usage:
    -f, --output_folder  Name of the output folder
                         ['output' by default]
    -w, --with_title     The name of the song is included in the file.
-                        [Enabled by default]
+                        [Disabled by default]
    -s, --separator      Defines how song lyrics are separated.
                         [Works with -a / --allsongs only]
    -u, --url            URL to parse.
@@ -53,7 +53,7 @@ Usage:
                         [Disabled by default]
 ```
 
-For example, you can run  `ruby src/main.rb -a -w=true -o=kish.txt -f=out -s=ANOTHER SONG!` and get one file at `out/kish.txt` with all lyrics and titles separated by `ANOTHER SONG!` string! Pretty good!
+For example, you can run  `ruby src/main.rb -a -w -o=kish.txt -f=out -s=ANOTHER SONG!` and get one file at `out/kish.txt` with all lyrics and titles separated by `ANOTHER SONG!` string! Pretty good!
 
 In addition, you can receive texts from any artists located on the http://slushat-tekst-pesni.ru/ website.
 You only need to use a  `-u` or `--url` key with a link to the artist, for example
