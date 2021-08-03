@@ -64,6 +64,8 @@ You only need to use a  `-u` or `--url` key with a link to the artist, for examp
 You can use this application both to simply get the lyrics of your favorite songs,
 but also, for example, to collect data for AI- or ML-related applications.
 
+You can find some of the lyrics that I have collected in the [output](https://github.com/maxbarsukov/korol-i-shut-lyrics-parser/tree/master/output) folder
+
 ## License
 
 MIT License. Copyright 2021 Max Barsukov
