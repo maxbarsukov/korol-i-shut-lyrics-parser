@@ -18,6 +18,8 @@ class Song
                .gsub('<br>', "\n")
                .gsub('<br/>', "\n")
                .gsub('<br />', "\n")
+               .gsub('&amp;', '')
+               .gsub('&nbsp;', ' ')
   end
 
   def parse
