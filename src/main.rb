@@ -59,6 +59,14 @@ ARGS.each do |key, value|
   end
 end
 
+if OPTIONS[:debug]
+  puts 'ARGS:'
+  pp ARGS
+
+  puts 'OPTIONS:'
+  pp OPTIONS
+end
+
 if OPTIONS[:help]
   puts USAGE
   puts HELP
