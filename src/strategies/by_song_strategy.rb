@@ -8,7 +8,6 @@ class BySongStrategy < ParsingStrategy
 
   def initialize(options = { with_title: true })
     super
-    @options[:output_folder] = true
   end
 
   def parse!(links)
@@ -19,7 +18,7 @@ class BySongStrategy < ParsingStrategy
     end
   end
 
-  def write!(song, file_name, output_folder = 'output')
+  def write!(song, file_name, output_folder = @options[:output_folder] || 'output')
     Dir.mkdir(output_folder) unless File.exist?(output_folder)
 
     location = "#{Dir.pwd}/#{output_folder}/#{file_name}"
