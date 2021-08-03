@@ -59,7 +59,7 @@ For example, you can run  `ruby src/main.rb -a -w -o=kish.txt -f=out -s=ANOTHER 
 
 In addition, you can receive texts from any artists located on the http://slushat-tekst-pesni.ru/ website.
 You only need to use a  `-u` or `--url` key with a link to the artist, for example
-`ruby src/main.rb -a -o=ariya.txt -u=http://slushat-tekst-pesni.ru/ariya/` it will return you a file with all the songs of the Aria band.
+`ruby src/main.rb -a -o=ariya.txt -u=http://slushat-tekst-pesni.ru/ariya/` will return you a file with all the songs of the Aria band.
 
 ## Usage
 
