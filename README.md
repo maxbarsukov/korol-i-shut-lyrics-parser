@@ -1,5 +1,7 @@
 # King and Jester (Король и Шут) lyrics parser
 
+![Gorshok](https://github.com/maxbarsukov/korol-i-shut-lyrics-parser/blob/master/docs/images/gorshok.jpg?raw=true)
+
 > Будь как дома, путник, Я ни в чём не откажу
 
 Allows you to collect all the lyrics of your favorite band
