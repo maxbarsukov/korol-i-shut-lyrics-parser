@@ -6,10 +6,6 @@ require_relative '../song'
 class BySongStrategy < ParsingStrategy
   attr_accessor :songs
 
-  def initialize(options = { with_title: true })
-    super
-  end
-
   def parse!(links)
     @songs = links.map { |link| Song.new(link) }
     @songs.each(&:parse!)
@@ -18,7 +14,7 @@ class BySongStrategy < ParsingStrategy
     end
   end
 
-  def write!(song, file_name, output_folder = @options[:output_folder] || 'output')
+  def write!(song, file_name, output_folder = @options[:output_folder])
     Dir.mkdir(output_folder) unless File.exist?(output_folder)
 
     location = "#{Dir.pwd}/#{output_folder}/#{file_name}"
